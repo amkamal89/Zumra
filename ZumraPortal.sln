@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zumra.Web", "Zumra.Web", "{26A3220B-224F-448A-A67C-BDFEB7C12852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZumraPortal", "ZumraPortal\ZumraPortal.csproj", "{D2645383-8553-4E78-8782-92AB5891E255}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zumra.Service", "Zumra.Service", "{E0D841B8-6B77-4FCE-A5A9-6E634F772704}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zumra.Data", "Zumra.Data", "{62D785DF-4F7B-41BD-B2D8-C58C0E03BAA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZumraData", "ZumraData\ZumraData.csproj", "{B4C31133-2436-40E9-AA99-8C49999F175F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZumraService", "ZumraService\ZumraService.csproj", "{59E1CA55-A659-4F0A-BDF1-8726C23F884D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZumraModel", "ZumraModel\ZumraModel.csproj", "{FBD6784C-01CE-4EDC-9395-26377361CE73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2645383-8553-4E78-8782-92AB5891E255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2645383-8553-4E78-8782-92AB5891E255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2645383-8553-4E78-8782-92AB5891E255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2645383-8553-4E78-8782-92AB5891E255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C31133-2436-40E9-AA99-8C49999F175F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C31133-2436-40E9-AA99-8C49999F175F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C31133-2436-40E9-AA99-8C49999F175F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C31133-2436-40E9-AA99-8C49999F175F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E1CA55-A659-4F0A-BDF1-8726C23F884D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E1CA55-A659-4F0A-BDF1-8726C23F884D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E1CA55-A659-4F0A-BDF1-8726C23F884D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E1CA55-A659-4F0A-BDF1-8726C23F884D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBD6784C-01CE-4EDC-9395-26377361CE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD6784C-01CE-4EDC-9395-26377361CE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD6784C-01CE-4EDC-9395-26377361CE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD6784C-01CE-4EDC-9395-26377361CE73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2645383-8553-4E78-8782-92AB5891E255} = {26A3220B-224F-448A-A67C-BDFEB7C12852}
+		{B4C31133-2436-40E9-AA99-8C49999F175F} = {62D785DF-4F7B-41BD-B2D8-C58C0E03BAA3}
+		{59E1CA55-A659-4F0A-BDF1-8726C23F884D} = {E0D841B8-6B77-4FCE-A5A9-6E634F772704}
+		{FBD6784C-01CE-4EDC-9395-26377361CE73} = {26A3220B-224F-448A-A67C-BDFEB7C12852}
+	EndGlobalSection
+EndGlobal

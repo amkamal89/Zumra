@@ -1,0 +1,548 @@
+﻿@using ZumraModel;
+@{
+    ViewBag.Title = "Home Page";
+    var CatList = new List<CategoryVm>();
+    if(ViewBag._CatList!=null)
+    {
+        CatList = ViewBag._CatList;
+    }
+}
+
+<!-- Home Main Content -->
+<main class="container zm-container">
+    <section class="row zm-main-cat">
+        <aside class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <h1>
+                <span>
+                    CATEGORIES
+                </span>
+            </h1>
+
+            <ul>
+                @if (CatList.Any())
+                {
+                    foreach (var item in CatList)
+                    {
+                        <li>
+                            <a href="/Category/@item.ID">@item.TitleEN</a>
+                        </li>
+                    }
+                }
+            </ul>
+        </aside>
+
+        <main class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <div class="swiper-container swiper-container-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="/img/slider-img.png" alt="Zumra Food" title="Zumra Food" class="img-responsive">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="/img/slider-img.png" alt="Zumra Food" title="Zumra Food" class="img-responsive">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="/img/slider-img.png" alt="Zumra Food" title="Zumra Food" class="img-responsive">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="/img/slider-img.png" alt="Zumra Food" title="Zumra Food" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fa fa-chevron-left"></i>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="row zm-upper-offers">
+        <article class="col-xs-4">
+            <div>
+                <img src="/img/organic-natural.png" alt="Offers" title="Offers">
+
+                <a href="">ORGANIC <br> NATURAL</a>
+            </div>
+        </article>
+
+        <article class="col-xs-4">
+            <div>
+                <img src="/img/offer-2.png" alt="Offers" title="Offers">
+
+                <a href="">
+                    END OF SEASON <br>
+                    <span>SALE</span>
+                </a>
+            </div>
+        </article>
+
+        <article class="col-xs-4">
+            <div>
+                <img src="/img/offer-3.png" alt="Offers" title="Offers">
+
+                <a href="">
+                    SALE OFF UPTO <br>
+                    <span>50%</span>
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <section class="row zm-items-group">
+        <a class="more" href="">MORE</a>
+
+        <h2 class="title">NEW ARRIVAL</h2>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <section class="row zm-items-group">
+        <a class="more" href="">MORE</a>
+
+        <h2 class="title">FEATURED</h2>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <section class="row zm-items-group">
+        <a class="more" href="">MORE</a>
+
+        <h2 class="title">BEST SELLER</h2>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+
+        <article class="col-lg-3 col-md-4 col-sm-6 col-xs-6 zm-item-card">
+            <div class="row photo">
+                <span>NEW</span>
+
+                <a href="">
+                    <img src="/img/slider-img.png" alt="">
+                </a>
+            </div>
+
+            <div class="row title text-center">
+                <a href="">
+                    Kai Shun Wasabi Black Yanagiba 8inch
+                </a>
+            </div>
+
+            <div class="row shop">
+                <span>1200 L.E</span>
+
+                <a href="">
+                    <i class="fa fa-shopping-cart"></i>
+                    SHOP NOW
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <section class="row zm-services margin-zero">
+        <div class="col-xs-4">
+            <div>
+                <i class="fa fa-shopping-cart"></i>
+
+                <p>
+                    <span>ORDER NOW</span><br>
+                    Hurry, this is limited so act fast
+                </p>
+            </div>
+        </div>
+
+        <div class="col-xs-4">
+            <div>
+                <i class="fa fa-truck"></i>
+
+                <p>
+                    <span>FREE SHIPPING</span><br>
+                    On orders over 200 L.E
+                </p>
+            </div>
+        </div>
+
+        <div class="col-xs-4">
+            <div>
+                <i class="fa fa-retweet"></i>
+
+                <p>
+                    <span>MONEY BACK</span><br>
+                    100% Within 14 day after delivery
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="row zm-cat-img">
+        <article class="col-xs-8 pull-left">
+            <div>
+                <h1>SAUCE <br> AND CONDIMENTS</h1>
+
+                <img src="/img/sauce-cat.jpg" class="img-responsive" alt="SAUCE AND CONDIMENTS" title="SAUCE AND CONDIMENTS">
+
+                <a class="shop-now" href="">SHOP NOW</a>
+            </div>
+        </article>
+
+        <article class="col-xs-4 pull-right">
+            <div>
+                <h1>VINEGAR <br> AND SPICES</h1>
+
+                <img src="/img/vinegar-cat.jpg" class="img-responsive" alt="VINEGAR AND SPICES" title="VINEGAR AND SPICES">
+
+                <a class="shop-now" href="">SHOP NOW</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="row zm-cat-img">
+        <article class="col-xs-6 pull-left">
+            <div>
+                <h1>SEASONING</h1>
+
+                <img src="/img/seasoning-cat.jpg" class="img-responsive" alt="SEASONING" title="SEASONING">
+
+                <a class="shop-now" href="">SHOP NOW</a>
+            </div>
+        </article>
+
+        <article class="col-xs-6 pull-right">
+            <div>
+                <h1>FROZEN</h1>
+
+                <img src="/img/frozen-cat.jpg" class="img-responsive" alt="FROZEN" title="FROZEN">
+
+                <a class="shop-now" href="">SHOP NOW</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="row zm-cat-img">
+        <article class="col-xs-4 pull-left">
+            <div>
+                <h1>DRY FOODS</h1>
+
+                <img src="/img/dry-cat.jpg" class="img-responsive" alt="DRY" title="DRY">
+
+                <a class="shop-now" href="">SHOP NOW</a>
+            </div>
+        </article>
+
+        <article class="col-xs-8 pull-right">
+            <div>
+                <h1>CANNED</h1>
+
+                <img src="/img/canned-cat.jpg" class="img-responsive" alt="CANNED" title="CANNED">
+
+                <a class="shop-now" href="">SHOP NOW</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="row zm-newsletter">
+        <img src="/img/news-bck-left.png" alt="Contact Zumra" title="Contact Zumra" class="pull-left img-responsive">
+
+        <div class="text-center">
+            <h3>Sign up for news & Get 15% Off</h3>
+
+            <span>Subscribe to zumra food mailling list to receive updates on <br> now arrvals, special offers an other discount information</span>
+
+            <div class="form-group">
+                <div class="col-xs-8">
+                    <input type="email" class="form-control" id="Newsletter-Email" placeholder="Enter Your Email">
+                </div>
+
+                <div class="col-xs-4">
+                    <button type="submit" class="form-control btn btn-danger">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+
+        <img src="/img/news-bck-rightt.png" alt="Contact Zumra" title="Contact Zumra" class="pull-right img-responsive">
+    </section>
+</main>
