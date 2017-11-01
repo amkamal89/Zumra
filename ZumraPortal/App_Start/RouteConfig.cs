@@ -15,7 +15,7 @@ namespace ZumraPortal
 
             routes.MapRoute(
                 name: "Category",
-                url: "{Category}/{id}",
+                url: "Category/{title}/{id}",
                 defaults: new { controller = "Category", action = "Index", ID = UrlParameter.Optional }
             );
 

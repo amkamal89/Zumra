@@ -24,7 +24,7 @@
                     foreach (var item in CatList)
                     {
                         <li>
-                            <a href="/Category/@item.ID">@item.TitleEN</a>
+                            <a href="/Category/@Helper.NormalizeTitle(item.TitleEN)/@item.ID">@item.TitleEN</a>
                         </li>
                     }
                 }

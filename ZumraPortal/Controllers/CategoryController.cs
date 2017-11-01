@@ -15,10 +15,13 @@ namespace ZumraPortal.Controllers
         {
             cs = new CategoryService();
         }
-        public ActionResult Index(int ID)
+        public ActionResult Index(int ID, string Title)
         {
             var Model = cs.ProductsByCategoyID(ID);
-            return View(Model);
+            if (Title == Helper.NormalizeTitle(Model.TitleEN))
+                return View(Model);
+            else
+                return RedirectToAction("Index", new { ID = Model.ID, Title = Helper.NormalizeTitle(Model.TitleEN) });
         }
     }
 }
